@@ -1,0 +1,107 @@
+// .music-chart {
+//     padding:0 2rem 2rem 2rem;
+
+//     h2 {
+//         font-weight: 900;
+//     }
+// }
+
+.music-chart {
+  padding: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  color: var(--white600);
+  position: relative;
+
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h2 {
+      font-size: 1.5rem;
+      color: var(--white700);
+    }
+
+    .date-picker {
+      /* 날짜 선택기 스타일 (필요 시 추가) */
+    }
+  }
+
+  .list {
+    ul {
+      list-style: none;
+      padding: 0;
+
+      .chart-item {
+        display: flex;
+        align-items: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid #444;
+
+        .rank {
+          width: 50px;
+          text-align: center;
+          font-size: 1.2rem;
+          color: var(--pointColor);
+          /* 포인트 색상 */
+        }
+
+        .thumb {
+          width: 50px;
+          height: 50px;
+          margin-right: 1rem;
+
+          img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+          }
+        }
+
+        .info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+
+          .title {
+            font-size: 1.25rem;
+            font-weight: bold;
+            font-family: var(--fontN);
+          }
+
+          .artist {
+            font-size: 0.9rem;
+            color: #aaa;
+          }
+        }
+
+        .album {
+          width: 150px;
+          text-align: right;
+          font-size: 0.9rem;
+          color: #aaa;
+          margin-right: 1rem;
+        }
+
+        .duration {
+          width: 50px;
+          text-align: right;
+          font-size: 0.9rem;
+          color: #aaa;
+        }
+      }
+    }
+  }
+
+  .search-results {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 400px;
+    background-color: #ccc;
+  }
+}
